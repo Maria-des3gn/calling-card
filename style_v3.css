@@ -9,13 +9,13 @@ body {
 
 .grid-container {
     display: grid;
-    padding: 15px 15px 15px 15px 15px 15px 15px 15px;
+    padding: 15px 15px 15px 15px;
     gap: 15px;
     grid-row-gap: 30px;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(16, 1fr);
     grid-template-areas: 
     "name name name bio bio bio . . "
-    ". . . .image-6 image-6 image-6 ."
+    ". paris . . image-6 image-6 image-6 ."
     ". .image-7 image-7 image-7 . . ."
     ". . . . . image-8 image-8 image-8"
     ". image-9 image-9 image-9 . . . ."
@@ -23,48 +23,10 @@ body {
     ". . image-11 image-11 image-11 . . ."
     ". . . . . image-3 image-3 image-3"
     ". . image-4 image-4 image-4 . . ."
-    ". . . . image-5 image-5 image-5 .";
-    
+    ". . . . image-5 image-5 image-5 ."; 
+    /* image raster */
+       
 }
-/* hover für image */
-
-.image-6:hover {
-    max-width: 70%;
-}
-
-.image-7:hover {
-    max-width: 70%;
-}
-
-.image-8:hover {
-    max-width: 70%;
-}
-
-.image-9:hover {
-    max-width: 70%;
-}
-
-.image-10:hover {
-    max-width: 70%;
-}
-
-.image-11:hover {
-    max-width: 70%;
-}
-
-.image-3:hover {
-    max-width: 70%;
-}
-
-.image-4:hover {
-    max-width: 70%;
-}
-
-.image-5:hover {
-    max-width: 70%;
-}
-
-
 
 .name {
     grid-area: name;   
@@ -84,6 +46,7 @@ body {
 
 .bio {
     grid-area: bio;
+    margin-bottom: 250px;
 }
 
 .bio p {
@@ -98,58 +61,116 @@ body {
 }
 
 .image-6 {
-    grid-area: image-6;
-    max-width: 40%;
+    grid-area: image-6;    
+}
+/* hover grösser */
+.image-6 img {
+    transition: transform 0.5s ease;
 }
 
+.image-6 img:hover {
+    transform: scale(1.5);
+}
+/* hover grösser ende */
 .image-7 {
     grid-area: image-7;
-    max-width: 40%;
+}
+/* hover grösser */
+.image-7 img {
+    transition: transform 0.5s ease;
 }
 
+.image-7 img:hover {
+    transform: scale(1.5);
+}
+/* hover grösser ende */
 .image-8 {
     grid-area: image-8;
-    max-width: 40%;
+}
+/* hover grösser */
+.image-8 img {
+    transition: transform 0.5s ease;
 }
 
+.image-8 img:hover {
+    transform: scale(1.5);
+}
+/* hover grösser ende */
 .image-9 {
     grid-area: image-9;
-    max-width: 40%;
+}
+/* hover grösser */
+.image-9 img {
+    transition: transform 0.5s ease;
 }
 
+.image-9 img:hover {
+    transform: scale(1.5);
+}
+/* hover grösser ende */
 .image-10 {
     grid-area: image-10;
-    max-width: 40%;
+}
+/* hover grösser */
+.image-10 img {
+    transition: transform 0.5s ease;
 }
 
+.image-10 img:hover {
+    transform: scale(1.5);
+}
+/* hover grösser ende */
 .image-11 {
-    grid-area: image-11;
-    max-width: 40%;
+    grid-area: image-11;  
+}
+/* hover grösser */
+.image-11 img {
+    transition: transform 0.5s ease;
 }
 
+.image-11 img:hover {
+    transform: scale(1.5);
+}
+/* hover grösser ende */
 .image-3 {
     grid-area: image-3;
-    max-width: 40%;
+}
+/* hover grösser */
+.image-3 img {
+    transition: transform 0.5s ease;
 }
 
+.image-3 img:hover {
+    transform: scale(1.5);
+}
+/* hover grösser ende */
 .image-4 {
-    grid-area: image-4;
-    max-width: 40%;
+    grid-area: image-4;    
+}
+/* hover grösser */
+.image-4 img {
+    transition: transform 0.5s ease;
 }
 
+.image-4 img:hover {
+    transform: scale(1.5);
+}
+/* hover grösser ende */
 .image-5 {
     grid-area: image-5;
-    max-width: 40%;
+}
+/* hover grösser */
+.image-5 img {
+    transition: transform 0.5s ease;
 }
 
-.text-1 {
-    grid-area: text-6;
-    
+.image-5 img:hover {
+    transform: scale(1.5);
 }
 
-.text-2 {
-    grid-area: text-2;
-    
+.paris-projekt{
+    grid-area: paris
 }
+
 
 
