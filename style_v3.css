@@ -14,15 +14,15 @@ body {
     grid-template-columns: repeat(8, 1fr);
     grid-template-areas: 
     "name name name bio bio bio . . "
-    "image-6 image-6 image-6 . . . . ."
-    "image-7 image-7 image-7 . . . . ."
-    "image-8 image-8 image-8 . . . . ."
-    "image-9 image-9 image-9 . . . . ."
-    "image-10 image-10 image-10 . . . . ."
-    "image-11 image-11 image-11 . . . . ."
-    "image-3 image-3 image-3 . . . . ."
-    "image-4 image-4 image-4 . . . . ."
-    "image-5 image-5 image-5 . . . . .";
+    ". . . .image-6 image-6 image-6 ."
+    ". .image-7 image-7 image-7 . . ."
+    ". . . . . image-8 image-8 image-8"
+    ". image-9 image-9 image-9 . . . ."
+    ". . . . image-10 image-10 image-10 ."
+    ". . image-11 image-11 image-11 . . ."
+    ". . . . . image-3 image-3 image-3"
+    ". . image-4 image-4 image-4 . . ."
+    ". . . . image-5 image-5 image-5 .";
     
 
     
@@ -106,12 +106,12 @@ body {
 
 .text-1 {
     grid-area: text-6;
-    max-width: 40%;
+    
 }
 
 .text-2 {
     grid-area: text-2;
-    max-width: 40%;
+    
 }
 
 
