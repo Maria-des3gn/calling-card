@@ -11,6 +11,7 @@ body {
     display: grid;
     padding: 15px 15px 15px 15px 15px 15px 15px 15px;
     gap: 15px;
+    grid-row-gap: 30px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-areas: 
     "name name name bio bio bio . . "
@@ -24,9 +25,46 @@ body {
     ". . image-4 image-4 image-4 . . ."
     ". . . . image-5 image-5 image-5 .";
     
-
-    
 }
+/* hover für image */
+
+.image-6:hover {
+    max-width: 70%;
+}
+
+.image-7:hover {
+    max-width: 70%;
+}
+
+.image-8:hover {
+    max-width: 70%;
+}
+
+.image-9:hover {
+    max-width: 70%;
+}
+
+.image-10:hover {
+    max-width: 70%;
+}
+
+.image-11:hover {
+    max-width: 70%;
+}
+
+.image-3:hover {
+    max-width: 70%;
+}
+
+.image-4:hover {
+    max-width: 70%;
+}
+
+.image-5:hover {
+    max-width: 70%;
+}
+
+
 
 .name {
     grid-area: name;   
