@@ -4,7 +4,7 @@ img {
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 202, 233);
 }
 
 .grid-container {
@@ -15,15 +15,18 @@ body {
     grid-template-columns: repeat(16, 1fr);
     grid-template-areas: 
     "name name name bio bio bio . . . . . . . . . ."
+"titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1"
 ". image-6 image-6 image-6 . . . . . . . text4 text4 text4 text4 text4"
 ". . . . . . image-7 image-7 image-7 . text5 text5 text5 text5 . ."
 ". . image-8 image-8 image-8 . . . . . . . text6 text6 text6 text6"
-". text1 text1 text1 text1 text1 . . . image-9 image-9 image-9 . . . ."
-". . . . . text2 . . . . . .  .image-10 image-10 image-10"
-". . . . . . . . . image-11 image-11 image-11 . . . ."
-"text3 text3 text3 image-3 image-3 image-3 . . . . . . . . . ."
-". . . . . . . image-4 image-4 image-4 . . . . . ."
-"image-5 image-5 image-5 . . . . . . . . . . . . ."; 
+"titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2"
+". text1 text1 text1 text1 text1 . image-9 image-9 image-9 . . . . . ."
+". . . . . text2 . . text11 . . . . image-10 image-10 image-10"
+". . . . . text10 . . . image-11 image-11 image-11 . . . ."
+"titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3"
+"text3 text3 text3 image-3 image-3  image-3  text7  . . . . . . . . ."
+". image-4 image-4 image-4 . . text8  . . . . . . . . ."
+". . . . . image-5 image-5 image-5 . text9  . . . . . ."; 
     /* image raster */
        
 }
@@ -209,4 +212,46 @@ body {
 .parisprojekt-3 {
     grid-area: text6;
     margin-top: -200px;
+}
+
+.parisprojekt-4 {
+    grid-area: text10;
+    margin-top: -200px;
+}
+
+.parisprojekt-5 {
+    grid-area: text11;
+    margin-top: -200px;
+}
+
+.titel1 {
+    grid-area: titel1;
+}
+
+.titel2 {
+    grid-column: 1 / -1;
+    grid-area: titel2;
+    align-self: center;
+    justify-self: center;
+    border-top: solid;
+    border-top: 2px solid;
+    border-top-color:rgb(85, 255, 0);
+    width: 100%;
+    text-align: center;
+}
+
+.titel3 {
+    grid-area: titel3;
+}
+
+.typo-1 {
+    grid-area: text7 ;
+}
+
+.typo-2 {
+    grid-area: text8 ;
+}
+
+.typo-3 {
+    grid-area: text9 ;
 }
