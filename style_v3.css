@@ -14,16 +14,16 @@ body {
     grid-row-gap: 30px;
     grid-template-columns: repeat(16, 1fr);
     grid-template-areas: 
-    "name name name bio bio bio . . "
-    ". paris . . image-6 image-6 image-6 ."
-    ". .image-7 image-7 image-7 . . ."
-    ". . . . . image-8 image-8 image-8"
-    ". image-9 image-9 image-9 . . . ."
-    ". . . . image-10 image-10 image-10 ."
-    ". . image-11 image-11 image-11 . . ."
-    ". . . . . image-3 image-3 image-3"
-    ". . image-4 image-4 image-4 . . ."
-    ". . . . image-5 image-5 image-5 ."; 
+    "name name name bio bio bio . . . . . . . . . ."
+    ". paris . . . image-6 image-6 image-6 . . . . . . . ."
+    ". . . . . . . . .image-7 image-7 image-7 . . . .   "
+    ". . . .  image-8 image-8 image-8 . . . . . . . . ."
+    ". .   image-9 image-9 image-9 . . . . . . . . . . ."
+    ". . . . . . . image-10 image-10 image-10 . . . . . .  "
+    ". . . . . . . . . .image-11 image-11 image-11 . . .  "
+    ". . . . . image-3 image-3 image-3 . . . . . . . ."
+    ". image-4 image-4 image-4 . . . . . . . . . . . ."
+    ". . . .  . .image-5 image-5 image-5 . . . . . . . "; 
     /* image raster */
        
 }
@@ -46,7 +46,7 @@ body {
 
 .bio {
     grid-area: bio;
-    margin-bottom: 250px;
+    margin-bottom: px;
 }
 
 .bio p {
