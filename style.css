@@ -14,7 +14,7 @@ img {
 }
 
 body {
-    background-color: rgb(239, 242, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 .grid-container {
@@ -48,23 +48,17 @@ body {
 
 .name h1 {
     color: rgb(0, 0, 0);
-    font-size: 25px;
+    font-size: 60px;
     margin: 0;
-    font-family: WorkSans-BlackItalic;
-    
+    font-family: WorkSans-BlackItalic;   
 }
+
 
 .name h1:hover {
     color: rgb(255, 0, 0);
     font-style: normal;
 }
-.name p {
-    font-size: 100px;
-    font-family: WorkSans-BlackItalic;
-    color: rgb(0, 0, 0);
-    margin-top: 20px;
-     
-}
+
 
 .bio {
     grid-area: bio;
@@ -87,7 +81,7 @@ body {
 }
 
 .image-6 img:hover {
-    transform: scale(2.5);
+    transform: scale(1.5);
 }
 /* hover grösser ende */
 .image-7 {
@@ -99,7 +93,7 @@ body {
 }
 
 .image-7 img:hover {
-    transform: scale(2.5);
+    transform: scale(1.5);
 }
 /* hover grösser ende */
 .image-8 {
@@ -111,7 +105,7 @@ body {
 }
 
 .image-8 img:hover {
-    transform: scale(2.5);
+    transform: scale(1.5);
 }
 /* hover grösser ende */
 .image-9 {
@@ -124,7 +118,7 @@ body {
 }
 
 .image-9 img:hover {
-    transform: scale(2.5);
+    transform: scale(1.5);
 }
 /* hover grösser ende */
 .image-10 {
@@ -136,7 +130,7 @@ body {
 }
 
 .image-10 img:hover {
-    transform: scale(2.5);
+    transform: scale(1.5);
 }
 /* hover grösser ende */
 .image-11 {
@@ -160,7 +154,7 @@ body {
 }
 
 .image-3 img:hover {
-    transform: scale(2.5);
+    transform: scale(1.5);
 }
 /* hover grösser ende */
 .image-4 {
@@ -172,7 +166,7 @@ body {
 }
 
 .image-4 img:hover {
-    transform: scale(2.5);
+    transform: scale(1.5);
 }
 /* hover grösser ende */
 .image-5 {
@@ -180,11 +174,11 @@ body {
 }
 /* hover grösser */
 .image-5 img {
-    transition: transform 0.5s ease;
+    transition: transform 2.0s ease;
 }
 
 .image-5 img:hover {
-    transform: scale(2.5);
+    transform: scale(1.5);
 }
 
 .paris-projekt {
