@@ -1,10 +1,20 @@
+@font-face {
+    font-family: "WorkSans-BlackItalic";
+    src: url("fonts/WorkSans-BlackItalic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "WorkSans-Medium";
+    src: url("fonts/WorkSans-Medium.woff2") format("woff2");
+}
+
 img {
     max-width: 100%;
     height: auto;
 }
 
 body {
-    background-color: rgb(208, 226, 243);
+    background-color: rgb(239, 242, 255);
 }
 
 .grid-container {
@@ -14,19 +24,20 @@ body {
     grid-row-gap: 30px;
     grid-template-columns: repeat(16, 1fr);
     grid-template-areas: 
-    "name name name bio bio bio . . . . . . . . . ."
+"name name name . . . . . bio bio bio bio . text5 text5 text5"
+"titel4 . . . . . . . . . . . . . . ."
 "titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1"
 ". image-6 image-6 image-6 image-6 . . . . . . . . . . ."
-". . . . . . image-7 image-7 image-7 image-7 text4 text4 text4 text4 text4 ."
+". . . . . . image-7 image-7 image-7 image-7 text4 text4 text4 text4 text4 number1"
 ". image-8 image-8 image-8 image-8 . . . . . . . . . . ."
 "titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2"
 ". . . . . . image-9 image-9 image-9 image-9 . . . . . ."
 ". text1 text1 text1 text1 text1 . . . . . . image-10 image-10 image-10 image-10"
 ". . . . . . . image-11 image-11 image-11 image-11 . . . . ."
 "titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3"
-"image-3 image-3 image-3 image-3 . . . . . . . . . . . ."
-". . . . . . image-4 image-4 image-4 image-4 text7 text7 text7 text7 . ."
-". image-5 image-5 image-5 image-5 . . text8 text8 text8 . text9 . . . ."; 
+". image-3 image-3 image-3 image-3 . . . . . . . . . . . "
+". . . . . . image-4 image-4 image-4 image-4 text7 text7 text7 text7 text7 ."
+". image-5 image-5 image-5 image-5 . . . . . . . . . . ."; 
     /* image raster */
        
 }
@@ -37,13 +48,22 @@ body {
 
 .name h1 {
     color: rgb(0, 0, 0);
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
+    font-family: WorkSans-BlackItalic;
+    
 }
 
 .name h1:hover {
-    color: rgb(85, 255, 0);
+    color: rgb(255, 0, 0);
     font-style: normal;
+}
+.name p {
+    font-size: 100px;
+    font-family: WorkSans-BlackItalic;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+     
 }
 
 .bio {
@@ -52,13 +72,9 @@ body {
 }
 
 .bio p {
-    color: rgb(255, 255, 255);
-    font-style: oblique;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    line-height: 1,5;
-    text-align: center;
-    font-size: 43;
+    color: rgb(255, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10;
     margin: 0;
 }
 
@@ -71,7 +87,7 @@ body {
 }
 
 .image-6 img:hover {
-    transform: scale(1.5);
+    transform: scale(2.5);
 }
 /* hover grösser ende */
 .image-7 {
@@ -83,7 +99,7 @@ body {
 }
 
 .image-7 img:hover {
-    transform: scale(1.5);
+    transform: scale(2.5);
 }
 /* hover grösser ende */
 .image-8 {
@@ -95,7 +111,7 @@ body {
 }
 
 .image-8 img:hover {
-    transform: scale(1.5);
+    transform: scale(2.5);
 }
 /* hover grösser ende */
 .image-9 {
@@ -108,7 +124,7 @@ body {
 }
 
 .image-9 img:hover {
-    transform: scale(1.5);
+    transform: scale(2.5);
 }
 /* hover grösser ende */
 .image-10 {
@@ -120,7 +136,7 @@ body {
 }
 
 .image-10 img:hover {
-    transform: scale(1.5);
+    transform: scale(2.5);
 }
 /* hover grösser ende */
 .image-11 {
@@ -132,7 +148,7 @@ body {
 }
 
 .image-11 img:hover {
-    transform: scale(1.5);
+    transform: scale(2.5);
 }
 /* hover grösser ende */
 .image-3 {
@@ -144,7 +160,7 @@ body {
 }
 
 .image-3 img:hover {
-    transform: scale(2.0);
+    transform: scale(2.5);
 }
 /* hover grösser ende */
 .image-4 {
@@ -156,7 +172,7 @@ body {
 }
 
 .image-4 img:hover {
-    transform: scale(1.5);
+    transform: scale(2.5);
 }
 /* hover grösser ende */
 .image-5 {
@@ -168,7 +184,7 @@ body {
 }
 
 .image-5 img:hover {
-    transform: scale(1.5);
+    transform: scale(2.5);
 }
 
 .paris-projekt {
@@ -186,6 +202,8 @@ body {
     text-align: justify;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     transform: rotate(-90deg);
+    color: rgb(255, 0, 0);
+   
        
 }
 
@@ -208,12 +226,12 @@ body {
 
 .parisprojekt-1 {
     grid-area: text4;
-    margin-top: 160px;
     font-size: 16px;
     line-height: 30px;
     text-align: justify;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     transform: rotate(90deg);
+    color: rgb(255, 0, 0);
 }
 
 /* .parisprojekt-2 {
@@ -228,6 +246,13 @@ body {
 
 .typo-1 {
     grid-area: text7;
+     margin-top: 0px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transform: rotate(90deg);
+    color: rgb(255, 0, 0);
 }
 
 /* .typo-2 {
@@ -245,7 +270,7 @@ body {
     align-self: center;
     justify-self: center;
     font-size: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: WorkSans-Medium;
     /* border-top: solid;
     border-top: 2px solid;
     border-top-color:rgb(2, 7, 65);
@@ -257,6 +282,7 @@ body {
     grid-area: titel2;
     font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 30px;
 }
 
 .titel2 {
@@ -264,11 +290,8 @@ body {
     grid-area: titel2;
     align-self: center;
     justify-self: center;
-    /* border-top: solid;
-    border-top: 2px solid;
-    border-top-color:rgb(0, 0, 0);
-    width: 100%;
-    text-align: center; */
+    font-family: WorkSans-Medium;
+
 }
 
 .titel3 {
@@ -287,4 +310,18 @@ body {
     border-top-color:rgb(0, 0, 0);
     width: 100%;
     text-align: center; */
+    font-family: WorkSans-Medium;
 }
+
+.titel4 {
+    grid-area: titel4;
+}
+
+.text5 {
+    grid-area: text5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+
+
