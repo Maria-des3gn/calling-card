@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: "WorkSans-Medium";
-    src: url("fonts/WorkSans-Medium.woff2") format("woff2");
+    font-family: "WorkSans-Italic";
+    src: url("fonts/WorkSans-Italic.woff2") format("woff2");
 }
 
 img {
@@ -24,20 +24,20 @@ body {
     grid-row-gap: 30px;
     grid-template-columns: repeat(16, 1fr);
     grid-template-areas: 
-"name name name . . . . . bio bio bio bio . text5 text5 text5"
-"titel4 . . . . . . . . . . . . . . ."
+"name name name . . . . . . . . . . . . ."
+"bio bio bio bio bio bio bio bio bio bio bio bio bio bio . ."
 "titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1 titel1"
-". image-6 image-6 image-6 image-6 . . . . . . . . . . ."
-". . . . . . image-7 image-7 image-7 image-7 text4 text4 text4 text4 text4 number1"
-". image-8 image-8 image-8 image-8 . . . . . . . . . . ."
+". . . . . . image-6 image-6 image-6 image-6 . . . . . ."
+". image-7 image-7 image-7 image-7 . . . . . text4 text4 text4 text4 text4 number1"
+". . . . . . image-8 image-8 image-8 image-8  . . . . . ."
 "titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2 titel2"
 ". . . . . . image-9 image-9 image-9 image-9 . . . . . ."
-". text1 text1 text1 text1 text1 . . . . . . image-10 image-10 image-10 image-10"
-". . . . . . . image-11 image-11 image-11 image-11 . . . . ."
+". text1 text1 text1 text1 text1 . . . . .  image-10 image-10 image-10 image-10 ."
+". . . . . . image-11 image-11 image-11 image-11 . . . . . ."
 "titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3 titel3"
-". image-3 image-3 image-3 image-3 . . . . . . . . . . . "
-". . . . . . image-4 image-4 image-4 image-4 text7 text7 text7 text7 text7 ."
-". image-5 image-5 image-5 image-5 . . . . . . . . . . ."; 
+". . . . . . image-3 image-3 image-3 image-3 . . . . . ."
+". image-4 image-4 image-4 image-4 . . . . . text7 text7 text7 text7 text7 ."
+". . . . . . image-5 image-5 image-5 image-5 . . . . . . "; 
     /* image raster */
        
 }
@@ -48,9 +48,13 @@ body {
 
 .name h1 {
     color: rgb(0, 0, 0);
-    font-size: 60px;
+    font-size: 30px;
     margin: 0;
-    font-family: WorkSans-BlackItalic;   
+    
+}
+
+.a:link {
+    color: rgb(255, 0, 0);
 }
 
 
@@ -63,14 +67,14 @@ body {
 .bio {
     grid-area: bio;
     margin-bottom: 100px;
+    font-size: 80px;
+    font-family: WorkSans-Italic;
+    line-height: 105px;
+     text-align: justify;
+
 }
 
-.bio p {
-    color: rgb(255, 0, 0);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 10;
-    margin: 0;
-}
+
 
 .image-6 {
     grid-area: image-6;    
@@ -197,8 +201,15 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     transform: rotate(-90deg);
     color: rgb(255, 0, 0);
-   
-       
+         
+}
+
+.layout2-1:hover {
+    transform: rotate(0deg);
+}
+
+.layout2-1 img {
+    transition: transform .5s ease;
 }
 
 /* .layout2-2 {
@@ -228,6 +239,10 @@ body {
     color: rgb(255, 0, 0);
 }
 
+.parisprojekt-1:hover {
+    transform: rotate(0deg);
+}
+
 /* .parisprojekt-2 {
     grid-area: text5;
     margin-top: -100px;
@@ -247,6 +262,11 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     transform: rotate(90deg);
     color: rgb(255, 0, 0);
+    margin-top: -30px;
+}
+
+.typo-1:hover {
+    transform: rotate(0deg);
 }
 
 /* .typo-2 {
